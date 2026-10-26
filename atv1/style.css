@@ -1,0 +1,239 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Cabeçalho do site */
+.container,
+.conteudo {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+#topo {
+    background-color: #c8102e;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+#topo h1 {
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.eyebrow {
+    color: #f2c14e;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* Menu de navegação */
+nav {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #c8102e;
+}
+
+/* Parte principal da página */
+.banner {
+    min-height: 450px;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlOZghCrktSFQE5ihjCxp4TK-pMdj-DxQ5DG1BrV3zztQqetEccTwVQ_E&s=10');
+
+    background-position: center;
+    background-size: cover;
+}
+
+.escudo {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.banner h2 {
+    font-size: 35px;
+    margin: 15px 0;
+}
+
+.banner p {
+    font-size: 18px;
+}
+
+/* Botões */
+.botao {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #c8102e;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #8b0000;
+}
+
+/* Seções de conteúdo */
+.conteudo {
+    padding: 45px 0;
+}
+
+.conteudo h2,
+.torcida h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.conteudo h2::after,
+.torcida h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #c8102e;
+    margin: 10px auto;
+}
+
+.imagem-principal {
+    display: block;
+    width: 100%;
+    max-height: 380px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.conteudo > p {
+    margin: 12px 0;
+}
+
+/* Cartões de conteúdo */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    border-top: 4px solid #c8102e;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.card h3 {
+    color: #c8102e;
+    margin-bottom: 10px;
+}
+
+/* Seção sobre a torcida */
+.torcida {
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+        url('https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?auto=format&fit=crop&w=1600&q=80');
+
+    background-position: center;
+    background-size: cover;
+}
+
+.torcida p {
+    max-width: 700px;
+    margin: auto;
+}
+
+/* Rodapé */
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: white;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 600px) {
+    #topo h1 {
+        font-size: 30px;
+    }
+
+    .banner {
+        min-height: 350px;
+    }
+
+    .banner h2 {
+        font-size: 25px;
+    }
+
+    .banner p {
+        font-size: 16px;
+    }
+
+    .escudo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .conteudo h2,
+    .torcida h2 {
+        font-size: 24px;
+    }
+
+    nav a {
+        padding: 7px 10px;
+    }
+}
