@@ -1,1 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flamengo | ATV02</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="topo">
+    <div class="container">
+      <p class="eyebrow">ATIVIDADE 02 · HTML + CSS</p>
+      <h1>Universo Rubro-Negro</h1>
+      <p>Conteúdo da ATV01 com novos exemplos de HTML e CSS.</p>
+      <nav aria-label="Navegação principal">
+        <a href="#historia">História</a>
+        <a href="#titulos">Conquistas</a>
+        <a href="#tabela">Tabela</a>
+        <a href="#listas">Listas</a>
+        <a href="#elementos">Block e inline</a>
+        <a href="../index.html">Página inicial</a>
+      </nav>
+    </div>
+  </header>
 
+  <main>
+    <section class="banner">
+      <img src="https://static.dicionariodesimbolos.com.br/upload/8f/ec/simbolo-do-flamengo-13_xl.jpeg" alt="Escudo do Clube de Regatas do Flamengo" class="escudo">
+      <h2>Uma paixão que não tem explicação!</h2>
+      <p>Exemplos de estrutura, tabelas, listas, classes, IDs e layouts.</p>
+      <a href="#historia" class="botao">Explorar atividade</a>
+    </section>
+
+    <!-- Conteúdo da ATV01: história e imagens -->
+    <section id="historia" class="conteudo">
+      <h2>História do Flamengo</h2>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlOZghCrktSFQE5ihjCxp4TK-pMdj-DxQ5DG1BrV3zztQqetEccTwVQ_E&s=10" alt="Estádio de futebol" class="imagem-principal">
+      <p>Fundado em 1895, no Rio de Janeiro, o Clube de Regatas do Flamengo começou sua história no remo e se tornou um dos clubes mais populares do Brasil.</p>
+      <p>Com suas cores vermelha e preta, o Flamengo construiu uma trajetória marcada por grandes jogos, títulos e milhões de torcedores.</p>
+    </section>
+
+    <section id="titulos" class="conteudo">
+      <h2>Grandes conquistas</h2>
+      <div class="cards">
+        <article class="card"><h3>Libertadores</h3><p>Conquistas marcantes no futebol sul-americano.</p></article>
+        <article class="card"><h3>Campeonato Brasileiro</h3><p>Uma trajetória de grandes campanhas nacionais.</p></article>
+        <article class="card"><h3>Copa do Brasil</h3><p>Momentos inesquecíveis nas competições eliminatórias.</p></article>
+      </div>
+    </section>
+
+    <!-- Exemplo de tabela -->
+    <section id="tabela" class="conteudo">
+      <h2>Exemplo de tabela HTML</h2>
+      <p class="descricao">A tabela usa as tags table, thead, tbody, tr, th e td.</p>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr><th>Competição</th><th>Modalidade</th><th>Exemplo de informação</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Campeonato Brasileiro</td><td>Nacional</td><td>Competição por pontos</td></tr>
+            <tr><td>Copa do Brasil</td><td>Nacional</td><td>Competição eliminatória</td></tr>
+            <tr><td>Libertadores</td><td>Continental</td><td>Competição sul-americana</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Exemplos de listas -->
+    <section id="listas" class="conteudo">
+      <h2>Exemplos de listas</h2>
+      <div class="cards list-cards">
+        <article class="card">
+          <h3>Lista não ordenada</h3>
+          <p>Usa as tags ul e li:</p>
+          <ul>
+            <li>Camisa rubro-negra</li>
+            <li>Escudo do clube</li>
+            <li>Torcida</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Lista ordenada</h3>
+          <p>Usa as tags ol e li:</p>
+          <ol>
+            <li>Acessar a página</li>
+            <li>Ler o conteúdo</li>
+            <li>Explorar os exemplos</li>
+          </ol>
+        </article>
+      </div>
+    </section>
+
+    <!-- Classes e IDs -->
+    <section id="classes-ids" class="conteudo">
+      <h2>Classes e IDs</h2>
+      <div class="demo-box">
+        <p class="texto-destaque">Este parágrafo usa class="texto-destaque".</p>
+        <p class="texto-destaque">A mesma classe pode ser reutilizada em vários elementos.</p>
+        <p id="mensagem-unica">Este parágrafo usa id="mensagem-unica", que identifica um elemento específico.</p>
+      </div>
+      <p class="nota"><strong>Resumo:</strong> classes são reutilizáveis; um ID deve ser único na página.</p>
+    </section>
+
+    <!-- Block e inline -->
+    <section id="elementos" class="conteudo">
+      <h2>Elementos block e inline</h2>
+      <div class="demo-box">
+        <h3>Elementos block</h3>
+        <p>Parágrafos e títulos são exemplos de elementos que normalmente começam em uma nova linha.</p>
+        <div class="bloco-exemplo">Este é um elemento div (block).</div>
+
+        <h3 class="subtitulo-inline">Elementos inline</h3>
+        <p>O elemento <span class="inline-exemplo">span é inline</span> e permanece na mesma linha do texto, quando há espaço.</p>
+        <p>Outros exemplos de inline são <a href="https://www.flamengo.com.br/" target="_blank" rel="noopener noreferrer">links</a> e <strong>texto em negrito</strong>.</p>
+      </div>
+    </section>
+
+    <!-- Exemplo de layout com cards -->
+    <section class="conteudo">
+      <h2>Exemplo de layout com CSS Grid</h2>
+      <p class="descricao">Os três cartões abaixo são organizados usando display: grid e se adaptam a telas menores.</p>
+      <div class="layout-demo">
+        <div class="layout-item">Área 1</div>
+        <div class="layout-item">Área 2</div>
+        <div class="layout-item">Área 3</div>
+      </div>
+    </section>
+
+    <section id="torcida" class="torcida">
+      <h2>Uma paixão de milhões</h2>
+      <p>Ser Flamengo é vibrar, acreditar e apoiar o time em todos os momentos.</p>
+      <a href="https://www.flamengo.com.br/" target="_blank" rel="noopener noreferrer" class="botao">Site oficial</a>
+    </section>
+  </main>
+
+  <footer><p>Atividade 02 · HTML e CSS | <a href="../index.html">Voltar à página inicial</a></p></footer>
+</body>
+</html>

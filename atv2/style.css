@@ -1,0 +1,216 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f5f5f5;
+    color: #222;
+}
+
+.container, .conteudo {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+#topo {
+    background: #c8102e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#topo h1 {
+    margin: 10px;
+    font-size: 36px;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 8px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.banner {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.escudo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.botao {
+    display: inline-block;
+    background: #c8102e;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.botao:hover {
+    background: #85051c;
+}
+
+.conteudo {
+    padding: 30px 0;
+}
+
+.conteudo h2, .torcida h2 {
+    text-align: center;
+}
+
+.imagem-principal {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    flex: 1;
+    min-width: 200px;
+    border-top: 4px solid #c8102e;
+    border-radius: 5px;
+}
+
+.card h3 {
+    color: #c8102e;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+th {
+    background: #c8102e;
+    color: white;
+}
+
+.demo-box {
+    background: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.texto-destaque {
+    color: #85051c;
+    background: #ffe5e9;
+    padding: 10px;
+}
+
+#mensagem-unica {
+    background: #fff0c2;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.nota {
+    color: #555;
+}
+
+.subtitulo-inline {
+    margin-top: 20px;
+}
+
+.bloco-exemplo {
+    display: block;
+    background: #222;
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.inline-exemplo {
+    background: yellow;
+    padding: 3px;
+}
+
+.demo-box a {
+    color: #c8102e;
+}
+
+.layout-demo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.layout-item {
+    background: #c8102e;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.torcida {
+    background: #85051c;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.torcida p {
+    max-width: 700px;
+    margin: auto;
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+footer a {
+    color: white;
+}
+
+@media (max-width: 700px) {
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .layout-demo {
+        grid-template-columns: 1fr;
+    }
+}
